@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gita Ki Amritvaani - Namo Vasundhara Showcase</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="app-header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="profile-greeting d-flex align-items-center">
+                <div class="profile-circle"></div>
+                <span class="greeting-text">Hi Ratan!</span>
+            </div>
+            <div class="logo-text d-flex align-items-center">
+                <img src="app-logo.png" alt="HavanKund Logo" class="header-logo">
+                <span class="namo-text">नमो वसुंधरा:</span>
+            </div>
+        </div>
+    </header>
+
+    
+
+    <!-- Panchang Card
+    <section class="panchang-section">
+        <div class="container">
+            <div class="panchang-card">
+                <div class="panchang-top">
+                    <h3>पंचांग ३ जनवरी २०२६</h3>
+                    <p class="location">उज्जैन, मध्य प्रदेश, भारत</p>
+                </div>
+                <div class="panchang-bottom">
+                    <div class="timing-item">
+                        <img src="sunrise.png" alt="Sunrise">
+                        <span>सूर्योदय</span>
+                        <strong>७:०५ AM</strong>
+                    </div>
+                    <div class="timing-item">
+                        <img src="sunset.png" alt="Sunset">
+                        <span>सूर्यास्त</span>
+                        <strong>५:४५ PM</strong>
+                    </div>
+                    <div class="timing-item">
+                        <img src="moonrise.png" alt="Moonrise">
+                        <span>चन्द्रोदय</span>
+                        <strong>लगभग ५:३० PM</strong>
+                    </div>
+                </div>
+                <div class="festival">महत्वपूर्ण: पौष पूर्णिमा (शाकम्भरी पूर्णिमा)</div>
+            </div>
+            <div class="kundli-container">
+                <img src="kundli-chart.png" alt="Today's Kundli" class="kundli-img">
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Search Bar -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search by Chapter & Verse... e.g. Chapter 1 Verse 8">
+                <img src="search.png" alt="Search" class="search-icon">
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Chapters Section -->
+    <section class="chapters-section" id="chapters">
+        <div class="container">
+            <h2 class="section-title">Chapters</h2>
+
+            <!-- Chapter 1 -->
+            <div class="chapter-card">
+                <div class="chapter-header" onclick="toggleEpisodes(this)">
+                    Chapter 1: Arjuna Vishada Yoga (Verses 1-47)
+                </div>
+                <div class="episodes-list">
+                    <div class="episode-item" id="chapter-1-verse-1">
+                        <div class="episode-title">Chapter 1 Verse 1</div>
+                        <p>परिचय • सरल अर्थ • विस्तृत कथा • जीवन सबक • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="episode-item" id="chapter-1-verse-2">
+                        <div class="episode-title">Chapter 1 Verse 2</div>
+                        <p>पिछला रिकैप • श्लोक • अर्थ • कहानी • जीवन पाठ • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 2.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="episode-item" id="chapter-1-verse-3">
+                        <div class="episode-title">Chapter 1 Verse 3</div>
+                        <p>पिछला रिकैप • श्लोक • अर्थ • कहानी • जीवन पाठ • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 3.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="episode-item" id="chapter-1-verse-4">
+                        <div class="episode-title">Chapter 1 Verse 4</div>
+                        <p>पिछला रिकैप • श्लोक • अर्थ • कहानी • जीवन पाठ • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 4.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="episode-item" id="chapter-1-verse-5">
+                        <div class="episode-title">Chapter 1 Verse 5</div>
+                        <p>पिछला रिकैप • श्लोक • अर्थ • कहानी • जीवन पाठ • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 5.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="episode-item" id="chapter-1-verse-6">
+                        <div class="episode-title">Chapter 1 Verse 6</div>
+                        <p>पिछला रिकैप • श्लोक • अर्थ • कहानी • जीवन पाठ • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 6.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="episode-item" id="chapter-1-verse-7">
+                        <div class="episode-title">Chapter 1 Verse 7</div>
+                        <p>पिछला रिकैप • श्लोक • अर्थ • कहानी • जीवन पाठ • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 7.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="episode-item" id="chapter-1-verse-8">
+                        <div class="episode-title">Chapter 1 Verse 8</div>
+                        <p>पिछला रिकैप • श्लोक • अर्थ • कहानी • जीवन पाठ • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 8.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="episode-item" id="chapter-1-verse-9">
+                        <div class="episode-title">Chapter 1 Verse 9</div>
+                        <p>पिछला रिकैप • श्लोक • अर्थ • कहानी • जीवन पाठ • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 10.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+                    <!-- Add more verses like this -->
+                    <div class="episode-item" id="chapter-1-verse-10">
+                        <div class="episode-title">Chapter 1 Verse 10</div>
+                        <p>पिछला रिकैप • श्लोक • अर्थ • कहानी • जीवन पाठ • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 10.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <!-- Up to Verse 47 -->
+                </div>
+            </div>
+
+            <!-- Add more chapters similarly -->
+            <!-- Chapter 2 -->
+            <div class="chapter-card">
+                <div class="chapter-header" onclick="toggleEpisodes(this)">
+                    Chapter 2: Sankhya Yoga (Verses 1-72)
+                </div>
+                <div class="episodes-list">
+                    <div class="episode-item" id="chapter-2-verse-1">
+                        <div class="episode-title">Chapter 2 Verse 1</div>
+                        <p>परिचय • सरल अर्थ • विस्तृत कथा • जीवन सबक • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+
+                    <!-- Up to Verse 72 -->
+                </div>
+                <!-- Chapter 3 -->
+            </div>
+            <div class="chapter-card">
+                <div class="chapter-header" onclick="toggleEpisodes(this)">
+                    Chapter 3: Karma Yoga (Verses 1-43)
+                </div>
+                <div class="episodes-list">
+                    <div class="episode-item" id="chapter-3-verse-1">
+                        <div class="episode-title">Chapter 3 Verse 1</div>
+                        <p>परिचय • सरल अर्थ • विस्तृत कथा • जीवन सबक • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+
+                    <!-- Up to Verse 43 -->
+                </div>
+            </div>
+            <!-- Chapter 4 -->
+            <div class="chapter-card">
+                <div class="chapter-header" onclick="toggleEpisodes(this)">
+                    Chapter 4: Jnana Karma Sanyasa Yoga (Verses 1-42)
+                </div>
+                <div class="episodes-list">
+                    <div class="episode-item" id="chapter-4-verse-1">
+                        <div class="episode-title">Chapter 4 Verse 1</div>
+                        <p>परिचय • सरल अर्थ • विस्तृत कथा • जीवन सबक • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+
+                    <!-- Up to Verse 42 -->
+                </div>
+            </div>
+
+             <!-- Chapter 5 -->
+            <div class="chapter-card">
+                <div class="chapter-header" onclick="toggleEpisodes(this)">
+                    Chapter 5: Karma Sanyasa Yoga (Verses 1-29)
+                </div>
+                <div class="episodes-list">
+                    <div class="episode-item" id="chapter-5-verse-1">
+                        <div class="episode-title">Chapter 5 Verse 1</div>
+                        <p>परिचय • सरल अर्थ • विस्तृत कथा • जीवन सबक • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+
+                    <!-- Up to Verse 29 -->
+                </div>
+            </div>
+            <!-- Chapter 6 -->
+            <div class="chapter-card">
+                <div class="chapter-header" onclick="toggleEpisodes(this)">
+                    Chapter 6: Dhyana Yoga (Verses 1-47)
+                </div>
+                <div class="episodes-list">
+                    <div class="episode-item" id="chapter-6-verse-1">
+                        <div class="episode-title">Chapter 6 Verse 1</div>
+                        <p>परिचय • सरल अर्थ • विस्तृत कथा • जीवन सबक • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+
+                    <!-- Up to Verse 47 -->
+                </div>
+            </div>
+            <!-- Chapter 7 -->
+            <div class="chapter-card">
+                <div class="chapter-header" onclick="toggleEpisodes(this)">
+                    Chapter 7: Jnana-Vijnana Yoga (Verses 1-30)
+                </div>
+                <div class="episodes-list">
+                    <div class="episode-item" id="chapter-7-verse-1">
+                        <div class="episode-title">Chapter 7 Verse 1</div>
+                        <p>परिचय • सरल अर्थ • विस्तृत कथा • जीवन सबक • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+
+                    <!-- Up to Verse 30 -->
+                </div>
+            </div>
+            <!-- Chapter 8 -->
+            <div class="chapter-card">
+                <div class="chapter-header" onclick="toggleEpisodes(this)">
+                    Chapter 8: Akshara Brahma Yoga (Verses 1-28)
+                </div>
+                <div class="episodes-list">
+                    <div class="episode-item" id="chapter-8-verse-1">
+                        <div class="episode-title">Chapter 8 Verse 1</div>
+                        <p>परिचय • सरल अर्थ • विस्तृत कथा • जीवन सबक • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+
+                    <!-- Up to Verse 28 -->
+                </div>
+            </div>
+            <!-- Chapter 9 -->
+            <div class="chapter-card">
+                <div class="chapter-header" onclick="toggleEpisodes(this)">
+                    Chapter 9: Raja Vidya Raja Guhya Yoga (Verses 1-34)
+                </div>
+                <div class="episodes-list">
+                    <div class="episode-item" id="chapter-9-verse-1">
+                        <div class="episode-title">Chapter 9 Verse 1</div>
+                        <p>परिचय • सरल अर्थ • विस्तृत कथा • जीवन सबक • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+
+                    <!-- Up to Verse 34 -->
+                </div>
+            </div>
+            <!-- Chapter 10 -->
+            <div class="chapter-card">
+                <div class="chapter-header" onclick="toggleEpisodes(this)">
+                    Chapter 10: Vibhuti Yoga (Verses 1-42)
+                </div>
+                <div class="episodes-list">
+                    <div class="episode-item" id="chapter-10-verse-1">
+                        <div class="episode-title">Chapter 10 Verse 1</div>
+                        <p>परिचय • सरल अर्थ • विस्तृत कथा • जीवन सबक • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+
+                    <!-- Up to Verse 42 -->
+                </div>
+            </div>
+            <!-- Chapter 11 -->
+            <div class="chapter-card">
+                <div class="chapter-header" onclick="toggleEpisodes(this)">
+                    Chapter 11: Vishwarupa Darshana Yoga (Verses 1-55)
+                </div>
+                <div class="episodes-list">
+                    <div class="episode-item" id="chapter-11-verse-1">
+                        <div class="episode-title">Chapter 11 Verse 1</div>
+                        <p>परिचय • सरल अर्थ • विस्तृत कथा • जीवन सबक • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+
+                    <!-- Up to Verse 55 -->
+                </div>
+            </div>
+            <!-- Chapter 12 -->
+            <div class="chapter-card">
+                <div class="chapter-header" onclick="toggleEpisodes(this)">
+                    Chapter 12: Bhakti Yoga (Verses 1-20)
+                </div>
+                <div class="episodes-list">
+                    <div class="episode-item" id="chapter-12-verse-1">
+                        <div class="episode-title">Chapter 12 Verse 1</div>
+                        <p>परिचय • सरल अर्थ • विस्तृत कथा • जीवन सबक • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+
+                    <!-- Up to Verse 20 -->
+                </div>
+            </div>
+            <!-- Chapter 13 -->
+            <div class="chapter-card">
+                <div class="chapter-header" onclick="toggleEpisodes(this)">
+                    Chapter 13: Kshetra Kshetragnya Vibhaga Yoga (Verses 1-34)
+                </div>
+                <div class="episodes-list">
+                    <div class="episode-item" id="chapter-13-verse-1">
+                        <div class="episode-title">Chapter 13 Verse 1</div>
+                        <p>परिचय • सरल अर्थ • विस्तृत कथा • जीवन सबक • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+
+                    <!-- Up to Verse 34 -->
+                </div>
+            </div>
+            <!-- Chapter 14 -->
+            <div class="chapter-card">
+                <div class="chapter-header" onclick="toggleEpisodes(this)">
+                    Chapter 14: Guna Traya Vibhaga Yoga (Verses 1-27)
+                </div>
+                <div class="episodes-list">
+                    <div class="episode-item" id="chapter-14-verse-1">
+                        <div class="episode-title">Chapter 14 Verse 1</div>
+                        <p>परिचय • सरल अर्थ • विस्तृत कथा • जीवन सबक • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+
+                    <!-- Up to Verse 27 -->
+                </div>
+            </div>
+            <!-- Chapter 15 -->
+            <div class="chapter-card">
+                <div class="chapter-header" onclick="toggleEpisodes(this)">
+                    Chapter 15: Purushottama Yoga (Verses 1-20)
+                </div>
+                <div class="episodes-list">
+                    <div class="episode-item" id="chapter-15-verse-1">
+                        <div class="episode-title">Chapter 15 Verse 1</div>
+                        <p>परिचय • सरल अर्थ • विस्तृत कथा • जीवन सबक • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+
+                    <!-- Up to Verse 20 -->
+                </div>
+            </div>
+            <!-- Chapter 16 -->
+            <div class="chapter-card">
+                <div class="chapter-header" onclick="toggleEpisodes(this)">
+                    Chapter 16: Daivasura Sampada Vibhaga Yoga (Verses 1-24)
+                </div>
+                <div class="episodes-list">
+                    <div class="episode-item" id="chapter-16-verse-1">
+                        <div class="episode-title">Chapter 16 Verse 1</div>
+                        <p>परिचय • सरल अर्थ • विस्तृत कथा • जीवन सबक • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+
+                    <!-- Up to Verse 24 -->
+                </div>
+            </div>
+            <!-- Chapter 17 -->
+            <div class="chapter-card">
+                <div class="chapter-header" onclick="toggleEpisodes(this)">
+                    Chapter 17: Shraddha Traya Yoga (Verses 1-28)
+                </div>
+                <div class="episodes-list">
+                    <div class="episode-item" id="chapter-17-verse-1">
+                        <div class="episode-title">Chapter 17 Verse 1</div>
+                        <p>परिचय • सरल अर्थ • विस्तृत कथा • जीवन सबक • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+
+                    <!-- Up to Verse 28 -->
+                </div>
+            </div>
+            <!-- Chapter 18 -->
+            <div class="chapter-card">
+                <div class="chapter-header" onclick="toggleEpisodes(this)">
+                    Chapter 18: Moksha Sanyasa Yoga (Verses 1-78)
+                </div>
+                <div class="episodes-list">
+                    <div class="episode-item" id="chapter-18-verse-1">
+                        <div class="episode-title">Chapter 18 Verse 1</div>
+                        <p>परिचय • सरल अर्थ • विस्तृत कथा • जीवन सबक • संकल्प</p>
+                        <audio controls preload="metadata">
+                            <source src="Chapter1 Shlok 1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+
+                    <!-- Up to Verse 78 -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Gita Title Section -->
+    <section class="gita-title">
+        <div class="container text-center">
+            <h1>Gita Ki Amritvaani</h1>
+            <p class="lead">Complete Bhagavad Gita Audio Series<br>
+                One Verse Per Episode • Soothing Krishna Voice • Bansuri Music • Modern Life Lessons</p>
+            <img src="krishna-hero.png" alt="Lord Krishna" class="krishna-hero">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        जय श्री कृष्ण! हरि ओम।<br>
+        Gita Ki Amritvaani • Namo Vasundhara App Showcase
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
